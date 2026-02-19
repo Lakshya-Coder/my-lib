@@ -1,0 +1,50 @@
+# Hugo configuration file
+title: Lakshya Seth
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: About
+      pageRef: /about
+      weight: 2
+    - name: Contact ↗
+      url: "https://www.linkedin.com/in/lakshyaseth7089/"
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    # - name: GitHub
+    #   weight: 5
+    #   url: "http://github.com/Lakshya-Coder/i3-config/"
+    #   params:
+    #     icon: github
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.png
+      dark: images/logo.png
+      link: /lakshyaseth7089
+      width: 50
+      height: 50
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
